@@ -27,7 +27,7 @@ void transposeMatrix(int matrix[ROWS_A][COLS_A], int transposed[COLS_A][ROWS_A],
 int main() {
     srand(time(0)); 
 
-    // 2x3 matris A
+    
     int A[ROWS_A][COLS_A];
     for (int i = 0; i < ROWS_A; i++) {
         for (int j = 0; j < COLS_A; j++) {
@@ -39,7 +39,7 @@ int main() {
     int B[ROWS_B][COLS_B];
     for (int i = 0; i < ROWS_B; i++) {
         for (int j = 0; j < COLS_B; j++) {
-            B[i][j] = rand() % 10; // 0-9 arası rastgele sayılar
+            B[i][j] = rand() % 10; 
         }
     }
 
@@ -54,7 +54,7 @@ int main() {
     printf("Toplama işlemi mümkün değil (2x3 + 3x2)\n");
 
     
-    int C[ROWS_A][COLS_B] = {0}; // 2x2 matris
+    int C[ROWS_A][COLS_B] = {0}; 
     for (int i = 0; i < ROWS_A; i++) {
         for (int j = 0; j < COLS_B; j++) {
             for (int k = 0; k < COLS_A; k++) {
